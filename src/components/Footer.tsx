@@ -11,7 +11,7 @@ const StyledFooter = styled.footer`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    position: fixed;
 `
 
 const Footer = () => {

@@ -11,7 +11,9 @@ const Default = ({children}: DefaultProps) => {
 
     return (
         <>
-            <Header />
+            <div style={{width: '100%', display: 'flex', justifyContent: 'center', marginTop: 10}}>
+                <Header />
+            </div>
             <Container
                 maxWidth='md'
             >

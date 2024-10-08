@@ -7,13 +7,13 @@ const About = () => {
         <>
             <Container
                 maxWidth='md'
-                sx={{display: 'flex', marginTop: 5}}
+                sx={{display: 'flex', marginTop: 5, height: '100vh'}}
             >
                 <Box
-                    style={{backgroundColor: '#25143a', width: '50%', height: '400px', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px', padding: '20px' , boxShadow: '0px 0px 10px black'}}
+                    style={{backgroundColor: '#25143a', width: '50%', height: '400px', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px', padding: '20px',}}
                 >
                     <h1 style={{color: 'white', fontWeight: 400, margin: '10px 0px 0px 0px'}}>Arthur Bitencourt</h1>
-                    <h2 style={{color: 'white', fontWeight: 200, fontSize: 16,margin: '0px 0 10px'}}>Frontend Developer</h2>
+                    <h2 style={{color: 'white', fontWeight: 200, margin: '0px 0 10px'}}>Frontend Developer</h2>
                     <Typography
                         component='h3'
                         variant='body2'
@@ -29,15 +29,13 @@ const About = () => {
 
                     </Typography>
                 </Box>
-                <Box
-                    
-                >                    
+                <Box>                    
                     <Image  
                         src="/images/eu.png"
                         alt="Developer"
                         width={400}
                         height={400}
-                        style={{borderTopRightRadius: '10px', borderBottomRightRadius: '10px', boxShadow: '0px 0px 10px black'}}
+                        style={{borderTopRightRadius: '10px', borderBottomRightRadius: '10px'}}
                     />
                 </Box>
             </Container>
