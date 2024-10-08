@@ -13,7 +13,7 @@ const theme = createTheme({
             default: '#190b28',
             white: '#ffffff'
         }
-    }
+    },
 })
 
 export default theme
