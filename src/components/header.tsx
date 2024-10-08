@@ -1,6 +1,8 @@
 
 import { Container } from '@mui/material'
 import styled from 'styled-components'
+import React from 'react';
+import { useRouter } from 'next/router'
 
 
 const StyledHeader = styled.header`
@@ -25,23 +27,44 @@ const StyledButton = styled.button`
 `
 
 
+
 const Header = () => {
+
+    const router = useRouter()
+
+    const handleNav = (route: string) => {
+        router.push(route)
+    }
+
     return (
         <>
             <StyledHeader>
                 <Container maxWidth='xs'
                     sx={{display: 'flex', justifyContent: 'center'}}
                 >
-                    <StyledButton>
+                    <StyledButton
+                        onClick={() => handleNav('/')}
+                    >
+                        <p>Home</p>
+                    </StyledButton>
+                    <StyledButton
+                        onClick={() => handleNav('/about')}
+                    >
                         <p>Sobre</p>
                     </StyledButton>
-                    <StyledButton>
+                    <StyledButton
+                        onClick={() => handleNav('/services')}
+                    >
                         <p>Serviços</p>
                     </StyledButton>
-                    <StyledButton>
+                    <StyledButton
+                        onClick={() => handleNav('/techs')}
+                    >
                         <p>Techs</p>
                     </StyledButton>
-                    <StyledButton>
+                    <StyledButton
+                        onClick={() => handleNav('/contacts')}
+                    >
                         <p>Contatos</p>
                     </StyledButton>
                 </Container>
