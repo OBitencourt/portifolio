@@ -7,6 +7,7 @@ import { ThemeProvider } from '@mui/material';
 import {CssBaseline} from '@mui/material';
 import theme from '../src/theme';
 import { AppProps } from 'next/app';
+import TemplateDefault from '../src/templates/Default'
 
 export default function MyApp(props: AppProps) {
     const { Component, pageProps } = props
@@ -17,10 +18,12 @@ export default function MyApp(props: AppProps) {
                 <title>Arthur Bitencourt</title>
                 <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width" />
             </Head>
-            <ThemeProvider theme={theme}>
-                <CssBaseline />
-                <Component {...pageProps} />
-            </ThemeProvider>
+            <TemplateDefault>
+                <ThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <Component {...pageProps} />
+                </ThemeProvider>
+            </TemplateDefault>
         </React.Fragment>
     )
 }

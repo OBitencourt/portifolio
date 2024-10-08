@@ -13,12 +13,14 @@ const StyledButton = styled.button`
     margin: 7px 3px 0px;
     border-radius: 55px 55px 55px 55px;
     transition: all 250ms ease-out;
-    color: #e3e0e0;
+    color: #c4c2c2;
     width: 400px;
     border: none;
-    
+    cursor: pointer;
     &:hover {
         background-color: rgba(203, 198, 200, 0.05);
+        color: white;
+        transform: scale(1.05);
     }
 `
 
