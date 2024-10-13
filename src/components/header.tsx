@@ -3,12 +3,12 @@ import styled from 'styled-components'
 import React from 'react';
 
 const StyledHeader = styled.header`
-    width: 50%;
+    width: 70%;
     height: 50px;
     background-color: white;
     position: 'relative';
     border-radius: 55px 55px 55px 55px;
-    padding: 5px;
+    padding: 6px;
     display: flex;
     align-items: end;
     border: 1px solid #b0b0b0;
@@ -65,11 +65,11 @@ const Header = () => {
                 <StyledButton onClick={() => scrollToSection('about')}>
                     <p>Sobre</p>
                 </StyledButton>
-                <StyledButton onClick={() => scrollToSection('services')}>
-                    <p>Serviços</p>
-                </StyledButton>
                 <StyledButton onClick={() => scrollToSection('techs')}>
                     <p>Techs</p>
+                </StyledButton>
+                <StyledButton onClick={() => scrollToSection('services')}>
+                    <p>Serviços</p>
                 </StyledButton>
                 <StyledButton onClick={() => scrollToSection('contacts')}>
                     <p>Contatos</p>

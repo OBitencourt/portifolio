@@ -19,6 +19,12 @@ const Span = styled.button`
 `
 
 const Home = () => {
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
     
     return (
         <>
@@ -63,7 +69,7 @@ const Home = () => {
                         sx={{ display: 'flex', justifyContent: 'center', marginTop: 5, color: 'white' }}
                     >
                         <Typography>
-                            Esse site foi desenvolvido com as tecnologias presentes na página <Span>Techs</Span>
+                            Esse site foi desenvolvido tecnologias presentes na página <Span onClick={() => scrollToSection('techs')}>Techs</Span>
                         </Typography>
                     </Box>
                 </Box>
