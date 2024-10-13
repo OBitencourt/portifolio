@@ -1,6 +1,7 @@
-import About from "@/src/components/about";
-import Techs from "@/src/components/techs";
-import Home from '@/src/components/home';
+import About from "../src/components/About"
+import Techs from "@/src/components/Techs";
+import Home from '@/src/components/Home';
+import Contacts from "@/src/components/Contacts";
 
 
 const Index = () => {
@@ -9,6 +10,7 @@ const Index = () => {
             <Home/>
             <About />
             <Techs />
+            <Contacts />
         </>
     );
 };

@@ -39,7 +39,7 @@ const StyledSVG = styled.svg`
     width: 40px;
     height: 40px;
     margin-left: 5px;
-    padding: 5px;
+    padding: 3px;
     position: absolute;
 `
 
