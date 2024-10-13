@@ -19,18 +19,36 @@ const Card = styled.div`
     p {
         text-align: start;
     }
+
+    @media (max-width: 600px) {
+        margin: 0 auto;
+    }
+`
+const StyledContainer = styled(Container)`
+    @media (min-height: 550px) {
+        height: 100vh;
+    }
 `
 
 const Techs = () => {
     return (
         <>
-            <Container
+            <StyledContainer
                 maxWidth='lg'
-                sx={{height: '100vh', padding: 3, marginBottom: 5}}
+                sx={{ padding: 3, marginBottom: 5, marginTop: 10}}
                 id="techs"
             >
-                <Grid spacing={3} container>
-                    <Grid item xs={6} md={3} lg={3}>
+                <Typography
+                    align="center"
+                    component='h3'
+                    variant="h2"
+                    fontSize={40}
+                    sx={{color: 'white', marginBottom: 3, marginTop: 2}}
+                >
+                    Techs
+                </Typography>
+                <Grid spacing={3} container sx={{display: 'flex', justifyContent: 'center'}}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -57,7 +75,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -83,7 +101,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -109,7 +127,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -135,7 +153,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -161,7 +179,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -187,7 +205,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -213,7 +231,7 @@ const Techs = () => {
                             </Typography>
                         </Card>
                     </Grid>
-                    <Grid item xs={6} md={3} lg={3}>
+                    <Grid item xs={12} sm={6} md={4} lg={3}>
 
                         <Card>
                             <Image
@@ -241,7 +259,7 @@ const Techs = () => {
                     </Grid>
                 </Grid>
 
-            </Container>
+            </StyledContainer>
         </>
     )
 }

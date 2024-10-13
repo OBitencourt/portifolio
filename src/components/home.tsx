@@ -53,7 +53,8 @@ const Home = () => {
                         component='h2'
                         fontSize={40}
                         color="white"     
-                        gutterBottom             
+                        gutterBottom          
+                        align="center"   
                     >
                         Arthur Bitencourt Vieira Silva
                     </Typography>
@@ -63,12 +64,14 @@ const Home = () => {
                         gutterBottom
                         color="#c4c2c2"                   
                     >
-                        Frontend Developer
+                        Fullstack Developer
                     </Typography>
                     <Box
                         sx={{ display: 'flex', justifyContent: 'center', marginTop: 5, color: 'white' }}
                     >
-                        <Typography>
+                        <Typography
+                            align="center"
+                        >
                             Esse site foi desenvolvido tecnologias presentes na página <Span onClick={() => scrollToSection('techs')}>Techs</Span>
                         </Typography>
                     </Box>

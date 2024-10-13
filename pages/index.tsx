@@ -4,6 +4,7 @@ import Home from '@/src/components/Home';
 import Contacts from "@/src/components/Contacts";
 
 
+
 const Index = () => {
     return (
         <>
@@ -11,6 +12,7 @@ const Index = () => {
             <About />
             <Techs />
             <Contacts />
+            
         </>
     );
 };

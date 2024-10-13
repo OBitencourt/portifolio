@@ -17,6 +17,9 @@ const Button = styled.button`
         transform: scale(1.05);
         background-color: rgba(17, 7, 27, 0.9);
     }
+    @media (max-width: 700px) {
+        width: 70%;
+    }
 `
 
 const Anchor = styled.a`
@@ -35,6 +38,11 @@ const StyledSVG = styled.svg`
     position: absolute;
     left: 50px;
     padding-top: 5px;
+
+    @media (max-width: 700px) {
+        left: 20px;
+    }
+    
 `
 
 const Contacts = () => {
@@ -45,7 +53,7 @@ const Contacts = () => {
         
             <Container 
                 maxWidth='md'
-                sx={{height: '90vh', paddingTop: 5}}
+                sx={{height: '90vh', paddingTop: 20, marginBottom: 10}}
                 id="contacts"
             >
                 <Typography
