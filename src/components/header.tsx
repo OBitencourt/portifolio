@@ -3,14 +3,15 @@ import styled from 'styled-components'
 import React from 'react';
 
 const StyledHeader = styled.header`
-    width: 80%;
+    width: 50%;
     height: 50px;
     background-color: white;
     position: 'relative';
     border-radius: 55px 55px 55px 55px;
-    padding: 7px;
+    padding: 5px;
     display: flex;
     align-items: end;
+    border: 1px solid #b0b0b0;
 `
 const StyledButton = styled.button`
     background-color: transparent;
@@ -25,6 +26,7 @@ const StyledButton = styled.button`
 
     &:hover {
         background-color: rgba(25, 11, 40, 0.9);
+        border: 1px solid #b0b0b0;
         color: white;
         transform: scale(1.05);
     }
