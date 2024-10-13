@@ -24,7 +24,8 @@ const Home = () => {
         <>
             <Container
                 maxWidth='md'
-                sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh'}}
+                sx={{display: 'flex', justifyContent: 'center', alignItems: 'center', height: '90vh'}}
+                id="home"
             >
 
                 <Box

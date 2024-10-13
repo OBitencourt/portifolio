@@ -15,6 +15,7 @@ const Techs = () => {
             <Container
                 maxWidth='lg'
                 sx={{height: '100vh'}}
+                id="techs"
             >
                 <Card>
 

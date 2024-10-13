@@ -1,15 +1,12 @@
-
 import { Container } from '@mui/material'
 import styled from 'styled-components'
 import React from 'react';
-import { useRouter } from 'next/router'
-
 
 const StyledHeader = styled.header`
     width: 80%;
     height: 50px;
     background-color: white;
-    position: fixed;
+    position: 'relative';
     border-radius: 55px 55px 55px 55px;
     padding: 7px;
     display: flex;
@@ -27,7 +24,7 @@ const StyledButton = styled.button`
     padding: 10px;
 
     &:hover {
-        background-color: rgba(25, 11, 40, 0.7);
+        background-color: rgba(25, 11, 40, 0.9);
         color: white;
         transform: scale(1.05);
     }
@@ -35,50 +32,50 @@ const StyledButton = styled.button`
     p {margin: 0}
 `
 
-
+const StyledSVG = styled.svg`
+    fill: rgba(25, 11, 40, 0.9); /* Cor do hover dos botões */
+    width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    padding: 5px;
+    position: absolute;
+`
 
 const Header = () => {
 
-    const router = useRouter()
-
-    const handleNav = (route: string) => {
-        router.push(route)
+    const scrollToSection = (sectionId: string) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: 'smooth' });
+        }
     }
 
     return (
-        <>
-            <StyledHeader>
-                <Container maxWidth='xs'
-                    sx={{display: 'flex', justifyContent: 'center'}}
-                >
-                    <StyledButton
-                        onClick={() => handleNav('/')}
-                    >
-                        <p>Home</p>
-                    </StyledButton>
-                    <StyledButton
-                        onClick={() => handleNav('/about')}
-                    >
-                        <p>Sobre</p>
-                    </StyledButton>
-                    <StyledButton
-                        onClick={() => handleNav('/services')}
-                    >
-                        <p>Serviços</p>
-                    </StyledButton>
-                    <StyledButton
-                        onClick={() => handleNav('/techs')}
-                    >
-                        <p>Techs</p>
-                    </StyledButton>
-                    <StyledButton
-                        onClick={() => handleNav('/contacts')}
-                    >
-                        <p>Contatos</p>
-                    </StyledButton>
-                </Container>
-            </StyledHeader>
-        </>
+        <StyledHeader>
+            <StyledSVG viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="m528 0h-480c-26.5 0-48 21.5-48 48v320c0 26.5 21.5 48 48 48h192l-16 48h-72c-13.3 0-24 10.7-24 24s10.7 24 24 24h272c13.3 0 24-10.7 24-24s-10.7-24-24-24h-72l-16-48h192c26.5 0 48-21.5 48-48v-320c0-26.5-21.5-48-48-48zm-16 352h-448v-288h448z"/>
+            </StyledSVG>
+
+            <Container maxWidth='xs' sx={{ display: 'flex' }}>
+                <StyledButton onClick={() => scrollToSection('home')}>
+                    <p>Home</p>
+                </StyledButton>
+                <StyledButton onClick={() => scrollToSection('about')}>
+                    <p>Sobre</p>
+                </StyledButton>
+                <StyledButton onClick={() => scrollToSection('services')}>
+                    <p>Serviços</p>
+                </StyledButton>
+                <StyledButton onClick={() => scrollToSection('techs')}>
+                    <p>Techs</p>
+                </StyledButton>
+                <StyledButton onClick={() => scrollToSection('contacts')}>
+                    <p>Contatos</p>
+                </StyledButton>
+            </Container>
+
+            
+        </StyledHeader>
     )
 }
 

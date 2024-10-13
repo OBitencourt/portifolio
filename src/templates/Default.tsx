@@ -15,7 +15,7 @@ const Default = ({children}: DefaultProps) => {
                 <Header />
             </div>
             <Container
-                maxWidth='md'
+                maxWidth='lg'
             >
                 {children}
 

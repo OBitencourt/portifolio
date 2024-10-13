@@ -7,7 +7,8 @@ const About = () => {
         <>
             <Container
                 maxWidth='md'
-                sx={{display: 'flex', marginTop: 5, height: '100vh'}}
+                sx={{display: 'flex', marginTop: 5, height: '100vh', paddingTop: 12}}
+                id="about"
             >
                 <Box
                     style={{backgroundColor: '#25143a', width: '50%', height: '400px', borderTopLeftRadius: '10px', borderBottomLeftRadius: '10px', padding: '20px',}}
