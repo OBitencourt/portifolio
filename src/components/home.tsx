@@ -72,7 +72,7 @@ const Home = () => {
                         <Typography
                             align="center"
                         >
-                            Esse site foi desenvolvido tecnologias presentes na página <Span onClick={() => scrollToSection('techs')}>Techs</Span>
+                            Esse site foi desenvolvido com tecnologias presentes na página <Span onClick={() => scrollToSection('techs')}>Techs</Span>
                         </Typography>
                     </Box>
                 </Box>
