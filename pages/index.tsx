@@ -1,7 +1,7 @@
-import Home from '@/src/components/Home';
-import About from '@/src/components/About';
-import Techs from '@/src/components/Techs';
-import Contacts from '@/src/components/Contacts';
+import Home from '../src/components/home'
+import About from '../src/components/about'
+import Techs from '../src/components/techs';
+import Contacts from '../src/components/contacts';
 
 const Index = () => {
     return (
