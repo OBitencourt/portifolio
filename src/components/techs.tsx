@@ -24,16 +24,12 @@ const Card = styled.div`
         margin: 0 auto;
     }
 `
-const StyledContainer = styled(Container)`
-    @media (min-height: 550px) {
-        height: 100vh;
-    }
-`
+
 
 const Techs = () => {
     return (
         <>
-            <StyledContainer
+            <Container
                 maxWidth='lg'
                 sx={{ padding: 3, marginBottom: 5, marginTop: 10}}
                 id="techs"
@@ -259,7 +255,7 @@ const Techs = () => {
                     </Grid>
                 </Grid>
 
-            </StyledContainer>
+            </Container>
         </>
     )
 }
