@@ -1,9 +1,9 @@
-
+import Header from '@/src/components/Header'
 
 const Index = () => { 
     return (
         <>
-            a
+            <Header />
         </>
     );
 };
