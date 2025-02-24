@@ -7,7 +7,7 @@ const Techs = () => {
     return (
 
         <>
-            <section id="techs" style={{margin: '100px 0px'}}>
+            <section id="techs" style={{margin: '100px 0px', height: '150vh', display: 'flex', flexDirection: 'column' ,justifyContent: 'center'}}>
                 <Title align="center" gutterBottom>
                     My Techs
                 </Title>
