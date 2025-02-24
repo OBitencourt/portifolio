@@ -1,5 +1,6 @@
 import { Container } from "@mui/material"
 import { Info, TechsDiv, Title } from "./style"
+import Tabs from '../../Tabs'
 
 const Techs = () => {
 
@@ -21,7 +22,7 @@ const Techs = () => {
                         <Info>
                             I build modern and scalable applications and sites using the best technologies for each project. Click on a category to see the tools I use.
                         </Info>
-
+                        <Tabs></Tabs>
                     </TechsDiv>
                 </Container>
             </section>

@@ -9,15 +9,15 @@ export const Title = styled(Typography)`
 `
 
 export const TechsDiv = styled.div`
-    background: rgba( 255, 255, 255, 0.4 );
+    background:rgba(241, 241, 241, 0.78);
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.27 );
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
-    border-radius: 10px;
+    border-radius: 48px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     display: flex;
-    justify-content: space-between;
-    padding: 140px 70px;
+    justify-content: space-around;
+    padding: 120px 70px;
 `
 
 export const Info = styled(Typography)`
