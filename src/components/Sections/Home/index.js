@@ -6,11 +6,11 @@ const Home = () => {
 
     return(
         <>  
-            <section id="home">
+            <section id="home" style={{height: '90vh'}}>
 
                 <Container
                     maxWidth='false'
-                    sx={{margin: '130px auto', width: '96%'}}
+                    sx={{margin: '130px auto', width: '92%'}}
 
                 >
                     <Name>

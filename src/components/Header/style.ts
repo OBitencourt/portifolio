@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
-    width: 97%;
+    width: 93%;
     height: 130px;
     background-color: white;
     padding: 8px 30px;
