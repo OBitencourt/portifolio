@@ -3,6 +3,7 @@ import Home from '@/src/components/Sections/Home'
 import Techs from '@/src/components/Sections/Techs'
 import Portfolio from '@/src/components/Sections/Portfolio'
 import Call from '@/src/components/Sections/Call'
+import Testing from '@/src/components/Sections/Testing'
 
 const Index = () => { 
     return (
@@ -12,6 +13,7 @@ const Index = () => {
             <Techs />
             <Portfolio />
             <Call />
+            <Testing />
         </>
     );
 };

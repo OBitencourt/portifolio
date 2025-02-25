@@ -14,13 +14,6 @@ const Call = () => {
 
                     <MainTitle>
                         Your users are going to love it.
-
-                        <span>
-                            I will make you site unique.
-                        </span>
-                        <span>
-                            All the components are made by me.
-                        </span>
                     </MainTitle>
                 </Container>
 

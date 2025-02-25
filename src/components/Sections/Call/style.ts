@@ -6,10 +6,4 @@ export const MainTitle = styled.h1`
     line-height: 25rem;
     display: inline;
 
-    span:first-of-type {
-        font-size: 2rem;
-    }
-    span:last-of-type {
-        font-size: 2rem;
-    }
 `
