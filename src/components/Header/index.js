@@ -5,6 +5,7 @@ const Header = () => {
     return(
 
         <>
+            
             <StyledHeader>
                 <Image 
                     alt='logo'
