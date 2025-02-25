@@ -4,6 +4,7 @@ import Techs from '@/src/components/Sections/Techs'
 import Portfolio from '@/src/components/Sections/Portfolio'
 import Call from '@/src/components/Sections/Call'
 import Testing from '@/src/components/Sections/Testing'
+import { Typography } from '@mui/material'
 
 const Index = () => { 
     return (
@@ -14,6 +15,17 @@ const Index = () => {
             <Portfolio />
             <Call />
             <Testing />
+            <Typography
+                align='center'
+                sx={{
+                    fontFamily: "Inter",
+                    margin: "20px 0px"
+                }}
+                fontStyle="italic"
+                fontSize="1.4rem"
+            >
+                Developed by Arthur Bitencourt Vieira Silva.
+            </Typography>
         </>
     );
 };
