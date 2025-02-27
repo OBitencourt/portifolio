@@ -1,12 +1,15 @@
 import Image from 'next/image'
 import { Content, GitButton, DeployButton, Title } from './style'
 import { Container } from '@mui/material'
+import motion from 'framer-motion'
+
 
 const Portfolio = () => {
 
     return (
 
         <>
+            
             <section id="portfolio" style={{margin: '100px 0px'}}>
                 <Title align='center'>
                     Portfolio
