@@ -18,7 +18,7 @@ export const Circle = styled.div<{ size: string; color: string; top: string; lef
 
     @keyframes floating {
         0% {
-            transform: translate(-50%, -50%) ;
+            transform: translate(-50%, -30%) ;
         }
         100% {
             transform: translate(-50%, -50%) ;
