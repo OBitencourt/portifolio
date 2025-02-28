@@ -14,7 +14,7 @@ export const TechsDiv = styled.div`
     backdrop-filter: blur( 10px );
     -webkit-backdrop-filter: blur( 10px );
     border-radius: 48px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid #CCCCCC;
     display: flex;
     justify-content: space-around;
     padding: 120px 70px;

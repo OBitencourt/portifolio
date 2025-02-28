@@ -7,18 +7,22 @@ export const Content = styled.div`
 
 export const ButtonsWrapper = styled.div`
     width: 90%;
-    border-bottom:2px solid #A4A4A4;
+    border-bottom:2px solid #CCCCCC;
 `
 
 export const TabButton = styled.button<{ $active: boolean }>`
-    background-color: ${({ $active }) => ($active ? "#A4A4A4" : "transparent")};
+    background-color: ${({ $active }) => ($active ? "#CCCCCC" : "transparent")};
     border: none;
     font-family: "Manrope";
     padding: 20px 40px;
     font-size: 1.8rem;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+    transition: all 150ms ease-in-out;
+    cursor: pointer;
     
     &:hover {
-        background-color: ${({ $active }) => ($active ? "#A4A4A4" : "#D9D9D9")};
+        background-color: ${({ $active }) => ($active ? "#CCCCCC" : "#D9D9D9")};
     }
 
 `

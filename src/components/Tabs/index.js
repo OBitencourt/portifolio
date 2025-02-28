@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { ButtonsWrapper, Content, IconBox, TabButton } from "./style"
 import { useState } from "react"
+import { motion } from "framer-motion"
 
 const Frontend = {
     next: {
@@ -84,15 +85,24 @@ const Tabs = () => {
                             Object.values(Frontend).map(item => {
 
                                 return (
-                                    <IconBox key={item.name}>
-                                        <Image 
-                                            key={item.name}
-                                            src={`/images/${item.name}`}
-                                            alt="image"
-                                            height={55}
-                                            width={55}
-                                        />
-                                    </IconBox>
+
+                                    <motion.div
+                                        key={item.name}
+                                        initial={{ opacity: 0, y: 50 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.4 }}
+                                    >
+
+                                        <IconBox key={item.name}>
+                                            <Image 
+                                                key={item.name}
+                                                src={`/images/${item.name}`}
+                                                alt="image"
+                                                height={55}
+                                                width={55}
+                                            />
+                                        </IconBox>
+                                    </motion.div>
                                 )
                             })
 
@@ -101,30 +111,46 @@ const Tabs = () => {
                             Object.values(Backend).map(item => {
 
                                 return (
-                                    <IconBox key={item.name}>
-                                        <Image 
-                                            key={item.name}
-                                            src={`/images/${item.name}`}
-                                            alt="image"
-                                            height={55}
-                                            width={55}
-                                        />
-                                    </IconBox>
+
+                                    <motion.div
+                                        key={item.name}
+                                        initial={{ opacity: 0, y: 50 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.4 }}
+                                    >
+                                        <IconBox key={item.name}>
+                                            <Image 
+                                                key={item.name}
+                                                src={`/images/${item.name}`}
+                                                alt="image"
+                                                height={55}
+                                                width={55}
+                                            />
+                                        </IconBox>
+                                    </motion.div>
                                 )
                             })
                         ) : activeButton === "Utils" ? ( 
                             Object.values(Utils).map(item => {
 
                                 return (
-                                    <IconBox key={item.name}>
-                                        <Image 
-                                            key={item.name}
-                                            src={`/images/${item.name}`}
-                                            alt="image"
-                                            height={55}
-                                            width={55}
-                                        />
-                                    </IconBox>
+                                    <motion.div
+                                        key={item.name}
+                                        initial={{ opacity: 0, y: 50 }}
+                                        animate={{ opacity: 1, y: 0 }}
+                                        transition={{ duration: 0.5, delay: 0.4 }}
+                                    >
+
+                                        <IconBox key={item.name}>
+                                            <Image 
+                                                key={item.name}
+                                                src={`/images/${item.name}`}
+                                                alt="image"
+                                                height={55}
+                                                width={55}
+                                            />
+                                        </IconBox>
+                                    </motion.div>
                                 )
                             })
                         ) : (<>Maybe a error happenned :/</>)
