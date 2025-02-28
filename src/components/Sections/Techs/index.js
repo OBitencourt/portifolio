@@ -36,9 +36,9 @@ const Techs = () => {
             }}
           >
             <Tilt
-              tiltMaxAngleX={15} // Ajusta o ângulo máximo no eixo X
-              tiltMaxAngleY={15} // Ajusta o ângulo máximo no eixo Y
-              perspective={1000} // Controla a profundidade da perspectiva 3D
+              tiltMaxAngleX={5} // Ajusta o ângulo máximo no eixo X
+              tiltMaxAngleY={5} // Ajusta o ângulo máximo no eixo Y
+              perspective={1200} // Controla a profundidade da perspectiva 3D
               transitionSpeed={1000} // Suaviza a animação
               glareEnable={true} // Ativa o efeito de brilho
               glareMaxOpacity={0.3} // Define a opacidade máxima do brilho

@@ -13,15 +13,15 @@ export const Circle = styled.div<{ size: string; color: string; top: string; lef
     top: ${(props) => props.top};
     left: ${(props) => props.left};
     transform: translate(-50%, -50%);
-    animation: floating 5s infinite ease-in-out alternate;
     z-index: -1;
+    animation: floating 4s ease-in-out infinite alternate;
 
     @keyframes floating {
-        from {
-            transform: translate(-50%, -50%) translateY(0px);
+        0% {
+            transform: translate(-50%, -50%) ;
         }
-        to {
-            transform: translate(-50%, -50%) translateY(20px);
+        100% {
+            transform: translate(-50%, -50%) ;
         }
     }
 `
