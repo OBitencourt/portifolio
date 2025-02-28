@@ -1,14 +1,14 @@
 import { Container } from "@mui/material"
 import { Info, TechsDiv, Title } from "./style"
 import Tabs from '../../Tabs'
-import FadeIn from '../../Animations/FadeIn'
+import Appear from '../../Animations/Appear'
 
 const Techs = () => {
 
     return (
 
         <>
-            <FadeIn>
+            <Appear>
                 <section id="techs" style={{margin: '100px 0px', height: '150vh', display: 'flex', flexDirection: 'column' ,justifyContent: 'center'}}>
                     <Title align="center" gutterBottom>
                         My Techs
@@ -28,7 +28,7 @@ const Techs = () => {
                         </TechsDiv>
                     </Container>
                 </section>
-            </FadeIn>
+            </Appear>
         </>
     )
 }

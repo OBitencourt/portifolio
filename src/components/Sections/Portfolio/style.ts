@@ -17,6 +17,7 @@ export const Content = styled.div`
              20px -20px 60px #ffffff;
     display: flex;
     flex-direction: column;
+    border: 1px solid #CCCCCC;
 `
 export const GitButton = styled.button`
     background-color: black;
