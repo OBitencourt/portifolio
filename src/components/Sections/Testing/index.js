@@ -24,7 +24,7 @@ const Testing = () => {
                 <Container
                     maxWidth='false'
                     sx={{
-                        width: '93%',
+                        width: '50%',
                         display: 'flex',
                         justifyContent: 'space-around',
                         flexWrap: 'wrap',

@@ -20,12 +20,12 @@ export const SecondTitle = styled(Typography)`
 export const StyledButton = styled.button`
     background-color: none;
     background: none;
-    border: 1px solid #A4A4A4;
+    border: 1px solid #CCCCCC;
     width: 30%;
     font-family: "Manrope";
     color: #5C3E86;
-    font-size: 2rem;
-    padding: 30px;
+    font-size: 1.8rem;
+    padding:  16px;
     border-radius: 14px;
     transition: all 150ms ease-in-out;
     cursor: pointer;
@@ -34,3 +34,4 @@ export const StyledButton = styled.button`
         background-color: #F1F1F1;
     }
 `
+
