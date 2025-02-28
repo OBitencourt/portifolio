@@ -1,8 +1,9 @@
 import { Container } from "@mui/material";
-import { Info, TechsDiv, Title, CirclesContainer, Circle } from "./style";
+import { Info, TechsDiv, Title } from "./style";
 import Tabs from "../../Tabs";
 import Appear from "../../Animations/Appear";
 import Tilt from "react-parallax-tilt";
+import { Circle } from "../../Circle/style";
 
 const Techs = () => {
   return (
@@ -18,11 +19,10 @@ const Techs = () => {
           position: 'relative'
         }}
       >
-        <CirclesContainer>
-          <Circle size="200px" color="#9C60B6" top="10%" left="5%" />
-          <Circle size="150px" color="#5C3E86" top="30%" left="80%" />
-          <Circle size="300px" color="#9C60B6" top="70%" left="50%" />
-        </CirclesContainer>
+        <Circle size="200px" color="#9C60B6" top="10%" left="5%" />
+        <Circle size="150px" color="#5C3E86" top="30%" left="80%" />
+        <Circle size="300px" color="#9C60B6" top="70%" left="50%" />
+     
 
         <Appear>
           <Title align="center" gutterBottom>
