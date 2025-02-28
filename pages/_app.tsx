@@ -5,8 +5,19 @@ import propTypes from 'prop-types'
 import Head from 'next/head';
 import {CssBaseline} from '@mui/material';
 import { AppProps } from 'next/app';
+import { useEffect } from 'react';
+import Lenis from "lenis"
 
 export default function MyApp(props: AppProps) {
+    useEffect(() => {
+        const lenis = new Lenis();
+        function raf(time: DOMHighResTimeStamp) {
+            lenis.raf(time)
+            requestAnimationFrame(raf)
+        }
+        requestAnimationFrame(raf)
+    })
+
     const { Component, pageProps } = props
 
     return (
