@@ -2,19 +2,31 @@ import { Container } from "@mui/material"
 import { SecondTitle, StyledButton, Title } from "./style"
 import Modal from "../../Modal"
 import { useState } from "react"
+import Toast from "../../Toast"
+
 
 const Testing = () => {
 
     const [ openModal, setIsOpenModal ] = useState(false)
+    const [ active, setActive ] = useState(false)
 
     const handleModal = () => {
         setIsOpenModal(!openModal)
     }
 
+    const handleToast = () => {
+        setActive(true)
+
+        setTimeout(() => {
+            setActive(false)
+        }, 3000)
+    }
+
+
 
     return (
         <>
-            <section id="testing" style={{height: '100vh', display: 'flex', flexDirection: 'column' ,justifyContent: 'center', alignItems: 'center', position: 'relative'}}>
+            <section id="testing" style={{height: '100vh', display: 'flex', flexDirection: 'column' ,justifyContent: 'center', alignItems: 'center', position: 'relative', overflowX: 'hidden'}}>
                 <Title align="center">
                     Curious?
                 </Title>
@@ -35,7 +47,7 @@ const Testing = () => {
                     <StyledButton onClick={() => handleModal()}>
                         Modals
                     </StyledButton>
-                    <StyledButton>
+                    <StyledButton onClick={() => handleToast()}>
                         Toasts
                     </StyledButton>
                     <StyledButton>
@@ -47,6 +59,7 @@ const Testing = () => {
                     
                 </Container>
                 <Modal isActiveOrNot={openModal} closeModal={() => handleModal()} />
+                <Toast isActive={active} message="Toasts help with feedbacks" />
             </section>
         </>
     )

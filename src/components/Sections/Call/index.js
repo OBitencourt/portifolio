@@ -33,9 +33,27 @@ const AnimatedText = ({ text, delay }) => {
     return (
         <motion.div
             ref={ref}
-            initial={{ opacity: 0, y: 200 }}
-            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            initial={{ 
+                opacity: 0, 
+                y: 200,
+                scaleZ: 2,
+                rotateX: 30
+            }}
+            animate={
+                isInView ? 
+                    { 
+                        opacity: 1, 
+                        y: 0,
+                        scaleZ: 2,
+                        rotateX: 0  
+                    } 
+                : 
+                {}
+            }
             transition={{ duration: 0.6, delay }}
+            style={{
+                perspective: 1000 // Perspectiva para efeito 3D mais forte
+            }}
         >
             <MainTitle>{text}</MainTitle>
         </motion.div>

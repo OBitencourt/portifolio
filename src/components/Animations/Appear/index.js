@@ -24,7 +24,7 @@ const FadeIn = ({ children }) => {
                         scale: 1
                     }}
                     viewport={{ once: false, amount: 0.2 }} // Anima apenas quando entra na tela
-                    transition={{ duration: 0.8, ease: 'easeInOut'}}
+                    transition={{ duration: 0.6, ease: 'easeInOut'}}
                 >
                     {children}
                 </motion.div>
