@@ -18,20 +18,20 @@ export const SecondTitle = styled(Typography)`
 
 
 export const StyledButton = styled.button`
-    background-color: none;
-    background: none;
-    border: 1px solid #CCCCCC;
-    width: 30%;
+    background-color: #76328E;
+    background: #76328E;
+    border: none;
+    width: auto;
     font-family: "Manrope";
-    color: #5C3E86;
+    color: white;
     font-size: 1.8rem;
-    padding:  16px;
+    padding:  20px 64px;
     border-radius: 14px;
     transition: all 150ms ease-in-out;
     cursor: pointer;
 
     &:hover {
-        background-color: #F1F1F1;
+        filter: brightness(0.9);
     }
 `
 

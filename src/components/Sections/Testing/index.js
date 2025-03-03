@@ -3,6 +3,8 @@ import { SecondTitle, StyledButton, Title } from "./style"
 import Modal from "../../Modal"
 import { useState } from "react"
 import Toast from "../../Toast"
+import Tooltip from "../../Tooltip"
+
 
 
 const Testing = () => {
@@ -36,11 +38,12 @@ const Testing = () => {
                 <Container
                     maxWidth='false'
                     sx={{
-                        width: '50%',
+                        width: '55%',
                         display: 'flex',
                         justifyContent: 'space-around',
                         flexWrap: 'wrap',
-                        gap: '50px'
+                        gap: '50px',
+                        
                     }}
                 >
                     
@@ -53,9 +56,12 @@ const Testing = () => {
                     <StyledButton>
                         Popovers
                     </StyledButton>
-                    <StyledButton>
-                        Tooltips
-                    </StyledButton>
+                    <Tooltip text="Tooltips helps users to understand the functions of a element">
+
+                        <StyledButton>
+                            Tooltips
+                        </StyledButton>
+                    </Tooltip>
                     
                 </Container>
                 <Modal isActiveOrNot={openModal} closeModal={() => handleModal()} />
