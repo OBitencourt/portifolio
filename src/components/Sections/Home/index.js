@@ -1,11 +1,23 @@
+import { useState, useEffect } from "react";
 import { Container } from "@mui/material";
 import { MainButton, MainPhrase, Name, SecondaryButton } from "./style";
 import Image from "next/image";
 import FadeIn from "../../Animations/FadeIn";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Circle } from "../../Circle/style";
 
 const Home = () => {
+  const roles = ["Fullstack", "Frontend", "Backend"];
+  const [roleIndex, setRoleIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [roles.length]);
+
   return (
     <>
       <section id="home" style={{ height: "90vh", position: "relative" }}>
@@ -14,14 +26,23 @@ const Home = () => {
         <Circle color="#9C60B6" size="400px" top="100%" left="90%" />
 
         <FadeIn duration={1} y={100}>
-          <Container
-            maxWidth="false"
-            sx={{ margin: "130px auto", width: "92%" }}
-          >
+          <Container maxWidth="false" sx={{ margin: "130px auto", width: "92%" }}>
             <Name>Hi, my name is Arthur Bitencourt,</Name>
             <MainPhrase>
-              I{"'"}m the <span> Fullstack</span> Developer That you{" "}
-              <span>need.</span>
+              I{"'"}m the{" "}
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={roles[roleIndex]}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -10 }}
+                  transition={{ duration: 0.5 }}
+                  style={{ display: "inline-block" }}
+                >
+                  {roles[roleIndex]}
+                </motion.span>
+              </AnimatePresence>{" "}
+              Developer that you <span>need.</span>
             </MainPhrase>
 
             <motion.button
@@ -65,7 +86,7 @@ const Home = () => {
             </motion.button>
           </Container>
         </FadeIn>
-        <FadeIn duration={3} y={0}>
+        <FadeIn duration={2.5} y={0}>
 
           <Image 
             src="/images/byte-photo1.png"
@@ -125,9 +146,7 @@ const Home = () => {
             }}
           />
         </FadeIn>
-
       </section>
-
     </>
   );
 };

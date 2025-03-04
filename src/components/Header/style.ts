@@ -22,14 +22,13 @@ export const HeaderButtons = styled.button`
     border: none;
     background: none;
     font-family: "Space Grotesk";
-    font-size: 2.1rem;
+    font-size: 1.9rem;
     transition: all 250ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
     font-weight: 400;
+    cursor: pointer;
 
     &:hover {
-        color: #76328E;
         font-weight: 600;
-        transform: scale(1.05);
     }
 
 `
