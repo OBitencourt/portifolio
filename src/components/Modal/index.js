@@ -1,7 +1,6 @@
 
 import { Backdrop, Content, GotItButton, Info, Title } from "./style"
 
-
 const Modal = ({ isActiveOrNot, closeModal }) => {
 
 
@@ -9,7 +8,6 @@ const Modal = ({ isActiveOrNot, closeModal }) => {
 
         <>   
             <Backdrop isActive={isActiveOrNot} onClick={closeModal}>
-
                 <Content onClick={e => e.stopPropagation()}>
                     <Title>
                         Modals

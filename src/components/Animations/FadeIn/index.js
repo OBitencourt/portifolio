@@ -2,7 +2,7 @@
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react";
 
-const FadeIn = ({ children }) => {
+const FadeIn = ({ children, duration, y }) => {
 
     const [mounted, setMounted] = useState(false);
 
@@ -15,10 +15,10 @@ const FadeIn = ({ children }) => {
             {mounted && (
 
                 <motion.div
-                    initial={{ opacity: 0, y: 300 }}
+                    initial={{ opacity: 0, y: y }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: false, amount: 0.2 }} // Anima apenas quando entra na tela
-                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    transition={{ duration: duration, ease: "easeOut" }}
                 >
                     {children}
                 </motion.div>

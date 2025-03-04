@@ -13,7 +13,7 @@ const Home = () => {
         <Circle color="#5C3E86" size="400px" top="100%" left="5%" />
         <Circle color="#9C60B6" size="400px" top="100%" left="90%" />
 
-        <FadeIn>
+        <FadeIn duration={1} y={100}>
           <Container
             maxWidth="false"
             sx={{ margin: "130px auto", width: "92%" }}
@@ -65,7 +65,69 @@ const Home = () => {
             </motion.button>
           </Container>
         </FadeIn>
+        <FadeIn duration={3} y={0}>
+
+          <Image 
+            src="/images/byte-photo1.png"
+            alt="byte-photo1"
+            width={500}
+            height={500}
+            style={{
+              width: "600px",
+              height: "auto",
+              position: "absolute",
+              right: "10%",
+              top: "20%",
+              opacity: 0.7
+            }}
+          />
+          <Image 
+            src="/images/byte-photo2.png"
+            alt="byte-photo1"
+            width={500}
+            height={500}
+            style={{
+              width: "600px",
+              height: "auto",
+              position: "absolute",
+              right: "15%",
+              top: "-5%",
+              zIndex: '-1',
+              opacity: 0.9
+            }}
+          />
+          <Image 
+            src="/images/boni-photo2.png"
+            alt="byte-photo1"
+            width={500}
+            height={500}
+            style={{
+              width: "600px",
+              height: "auto",
+              position: "absolute",
+              right: "30%",
+              top: "35%",
+              opacity: 0.7
+            }}
+          />
+          <Image 
+            src="/images/boni-photo1.png"
+            alt="byte-photo1"
+            width={500}
+            height={500}
+            style={{
+              width: "600px",
+              height: "auto",
+              position: "absolute",
+              right: "15%",
+              top: "55%",
+              opacity: 0.9
+            }}
+          />
+        </FadeIn>
+
       </section>
+
     </>
   );
 };
