@@ -43,7 +43,7 @@ export const MainButton = styled.button`
     border: 4px solid white;
     transition: all 150ms ease-in-out;
     &:hover {
-        box-shadow: 0px 0px 20px  #76328E;
+        box-shadow: 0px 0px 12px  #76328E;
 
     }
 `

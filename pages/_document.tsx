@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <meta name="theme-color"/> 
           <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet" />
         </Head>
-        <body style={{overflowX: "hidden"}}>
+        <body style={{overflowX: "hidden", textDecoration: 'none'}}>
           <Main />
           <NextScript />
         </body>

@@ -29,7 +29,15 @@ const Portfolio = () => {
                         height: "300px",
                         borderRadius: "8px",
                         }}
-                    ></div>
+                    >
+                        <Image 
+                            src="/images/barbershop-print.png"
+                            alt="barber-shop"
+                            width={500}
+                            height={300}
+                            style={{width: '100%', height: '300px', borderRadius: "8px"}}
+                        />
+                    </div>
 
                     <div
                         style={{
@@ -39,16 +47,18 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>Deploy</DeployButton>
-                        <GitButton>
-                        See the code
-                        <Image
-                            alt="github"
-                            width={50}
-                            height={50}
-                            src="/images/github-white.svg"
-                            style={{ marginLeft: "12px" }}
-                        />
+                        <DeployButton>
+                            Deploy
+                        </DeployButton>
+                        <GitButton target="_blank">
+                            See the code
+                            <Image
+                                alt="github"
+                                width={50}
+                                height={50}
+                                src="/images/github-white.svg"
+                                style={{ marginLeft: "12px" }}
+                            />
                         </GitButton>
                     </div>
                     </Content>
@@ -60,7 +70,15 @@ const Portfolio = () => {
                         height: "300px",
                         borderRadius: "8px",
                         }}
-                    ></div>
+                    >
+                        <Image 
+                            src="/images/weblume-print.png"
+                            alt="barber-shop"
+                            width={500}
+                            height={300}
+                            style={{width: '100%', height: '300px', borderRadius: "8px"}}
+                        />
+                    </div>
 
                     <div
                         style={{
@@ -70,16 +88,18 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>Deploy</DeployButton>
-                        <GitButton>
-                        See the code
-                        <Image
-                            alt="github"
-                            width={50}
-                            height={50}
-                            src="/images/github-white.svg"
-                            style={{ marginLeft: "12px" }}
-                        />
+                        <DeployButton>
+                            Deploy
+                        </DeployButton>
+                        <GitButton target="_blank" href="https://github.com/OBitencourt/weblume">
+                                See the code
+                                <Image
+                                    alt="github"
+                                    width={50}
+                                    height={50}
+                                    src="/images/github-white.svg"
+                                    style={{ marginLeft: "12px" }}
+                                />
                         </GitButton>
                     </div>
                     </Content>
@@ -91,7 +111,16 @@ const Portfolio = () => {
                         height: "300px",
                         borderRadius: "8px",
                         }}
-                    ></div>
+                    >
+                        <Image 
+                            src="/images/vault-print.png"
+                            alt="barber-shop"
+                            width={500}
+                            height={300}
+                            style={{width: '100%', height: '300px', borderRadius: "8px"}}
+                        />
+
+                    </div>
 
                     <div
                         style={{
@@ -101,28 +130,39 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>Deploy</DeployButton>
-                        <GitButton>
-                        See the code
-                        <Image
-                            alt="github"
-                            width={50}
-                            height={50}
-                            src="/images/github-white.svg"
-                            style={{ marginLeft: "12px" }}
-                        />
+                        <DeployButton>
+                            Deploy
+                        </DeployButton>
+                        <GitButton target="_blank" href="https://github.com/OBitencourt/vault">
+                            See the code
+                            <Image
+                                alt="github"
+                                width={50}
+                                height={50}
+                                src="/images/github-white.svg"
+                                style={{ marginLeft: "12px" }}
+                            />
                         </GitButton>
                     </div>
                     </Content>
                     <Content>
                     <div
                         style={{
-                        backgroundColor: "white",
-                        width: "100%",
-                        height: "300px",
-                        borderRadius: "8px",
+                            backgroundColor: "white",
+                            width: "100%",
+                            height: "300px",
+                            borderRadius: "8px",
                         }}
-                    ></div>
+                    >
+                        <Image 
+                            src="/images/listly-print.png"
+                            alt="barber-shop"
+                            width={500}
+                            height={300}
+                            style={{width: '100%', height: '300px', borderRadius: "8px"}}
+                        />
+
+                    </div>
 
                     <div
                         style={{
@@ -132,16 +172,19 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>Deploy</DeployButton>
-                        <GitButton>
-                        See the code
-                        <Image
-                            alt="github"
-                            width={50}
-                            height={50}
-                            src="/images/github-white.svg"
-                            style={{ marginLeft: "12px" }}
-                        />
+                        <DeployButton>
+                            Deploy
+                        </DeployButton>
+
+                        <GitButton target="_blank" href="https://github.com/OBitencourt/listly">
+                            See the code
+                            <Image
+                                alt="github"
+                                width={50}
+                                height={50}
+                                src="/images/github-white.svg"
+                                style={{ marginLeft: "12px" }}
+                            />
                         </GitButton>
                     </div>
                     </Content>

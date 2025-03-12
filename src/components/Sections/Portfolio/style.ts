@@ -19,7 +19,7 @@ export const Content = styled.div`
     flex-direction: column;
     border: 1px solid #CCCCCC;
 `
-export const GitButton = styled.button`
+export const GitButton = styled.a`
     background-color: black;
     display: flex;
     align-items: center;
@@ -32,6 +32,7 @@ export const GitButton = styled.button`
     margin-left: 16px;
     transition: all 150ms ease-in-out;
     cursor: pointer;
+    text-decoration: none;
 
     &:hover {
         background-color:rgb(27, 27, 27);
@@ -48,6 +49,6 @@ export const DeployButton = styled.button`
     transition: all 150ms ease-in-out;
 
     &:hover {
-        background-color:rgb(196, 196, 196);
+        background-color:rgb(231, 231, 231);
     }
 `  
