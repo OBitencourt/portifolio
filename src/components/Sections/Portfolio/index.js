@@ -2,9 +2,20 @@ import Image from "next/image";
 import { Content, GitButton, DeployButton, Title } from "./style";
 import { Container } from "@mui/material";
 import Appear from "../../Animations/Appear";
-
+import Toast from "../../Toast";
+import { useState } from "react";
 
 const Portfolio = () => {
+    const [active, setActive] = useState(false)
+
+    const handleToast = () => {
+        setActive(true)
+
+        setTimeout(() => {
+            setActive(false)
+        }, 3000)
+    }
+
   return (
     <>
         <Appear>
@@ -130,7 +141,7 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>
+                        <DeployButton onClick={handleToast}>
                             Deploy
                         </DeployButton>
                         <GitButton target="_blank" href="https://github.com/OBitencourt/vault">
@@ -172,7 +183,7 @@ const Portfolio = () => {
                         marginTop: "24px",
                         }}
                     >
-                        <DeployButton>
+                        <DeployButton onClick={handleToast}>
                             Deploy
                         </DeployButton>
 
@@ -191,6 +202,7 @@ const Portfolio = () => {
                 </Container>
             </section>
         </Appear>
+        <Toast isActive={active} image={"unavailable-icon"} message="This project is not deployed yet!" />
     </>
   );
 };

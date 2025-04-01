@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { Content } from "./style";
 
-const Toast = ({message, isActive}) => {
+const Toast = ({message, isActive, image}) => {
     
   return (
     <>
@@ -9,7 +9,7 @@ const Toast = ({message, isActive}) => {
         
       <Content isActive={isActive}>
         <Image
-          src="/images/toasty-icon.svg"
+          src={`/images/${image}.svg`}
           alt="toasty-icon"
           width={50}
           height={50}

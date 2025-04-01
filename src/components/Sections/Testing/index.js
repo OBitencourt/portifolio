@@ -65,7 +65,7 @@ const Testing = () => {
                     
                 </Container>
                 <Modal isActiveOrNot={openModal} closeModal={() => handleModal()} />
-                <Toast isActive={active} message="Toasts help with feedbacks" />
+                <Toast isActive={active} image={"toasty-icon"} message="Toasts help with feedbacks" />
             </section>
         </>
     )

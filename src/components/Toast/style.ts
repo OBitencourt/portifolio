@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Content = styled.div<{ isActive: boolean}>`
-    width: 20%;
+    min-width: 20%;
     height: 80px;
     background-color: #76328E;
     font-family: "Manrope";
@@ -12,7 +12,7 @@ export const Content = styled.div<{ isActive: boolean}>`
     padding: 24px;
     color: white;
     font-weight: 500;
-    position: absolute;
+    position: fixed;
     bottom: 2%;
     right: 2%;
     margin-right: ${({isActive}) => (isActive ? "0" : "-1000px")};
