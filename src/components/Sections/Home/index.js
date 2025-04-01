@@ -61,7 +61,12 @@ const Home = () => {
                   padding: "4px",
                 }}
               >
-                <MainButton>Download my CV</MainButton>
+                <MainButton
+                  href="/images/CV-Arthur-Fullstack-english.pdf"
+                  download={true}
+                >
+                  Download my CV
+                </MainButton>
               </div>
             </motion.button>
 
@@ -73,7 +78,10 @@ const Home = () => {
                 backgroundColor: "transparent",
               }}
             >
-              <SecondaryButton>
+              <SecondaryButton
+                href="https://github.com/OBitencourt"
+                target="_blank"
+              >
                 See my Github
                 <Image
                   src="/images/github.svg"

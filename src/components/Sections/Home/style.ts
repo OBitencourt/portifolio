@@ -31,7 +31,7 @@ export const MainPhrase = styled.h1`
     }
 `
 
-export const MainButton = styled.button`
+export const MainButton = styled.a`
     background-color: #76328E;
     border: none;
     padding: 30px 80px;
@@ -42,13 +42,15 @@ export const MainButton = styled.button`
     cursor: pointer;
     border: 4px solid white;
     transition: all 150ms ease-in-out;
+    text-decoration: none;
+
     &:hover {
         box-shadow: 0px 0px 12px  #76328E;
 
     }
 `
 
-export const SecondaryButton = styled.button`
+export const SecondaryButton = styled.a`
     background-color: white;
     padding: 30px 50px;
     color: black;
@@ -62,6 +64,7 @@ export const SecondaryButton = styled.button`
     display: inline-flex;
     align-items: center;
     transition: all 150ms ease-in-out;
+    text-decoration: none;
 
     &:hover {
         background-color: #F1F1F1;
